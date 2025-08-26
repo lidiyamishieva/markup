@@ -44,7 +44,7 @@
     "href": "overview.html#support",
     "title": "Course overview",
     "section": "Support",
-    "text": "Support\nWe will not use the course page on Blackboard. Instead, all course materials can be found here on the course website, www.gerkovink.com/markup.\n\nFor handing in assignments and deliverables, you can fork this template repository following the flow outlined in ?sec-deliv.\n\nIf you regularly update your fork, we can keep track of your progress.\n\nPlease post your content-related questions as an issue in the course repository.\n\nQuestions regarding personal circumstances may be shared through e-mail with the teaching team. Please don’t use e-mail for other questions unless it cannot be avoided - we’d prefer if you ask us in class or open an issue in the course repo.",
+    "text": "Support\nWe will not use the course page on Blackboard. Instead, all course materials can be found here on the course website, https://mlarpis.github.io/markup.\n\nFor handing in assignments and deliverables, you can fork this template repository following the flow outlined in ?sec-deliv.\n\nIf you regularly update your fork, we can keep track of your progress.\n\nPlease post your content-related questions as an issue in the course repository.\n\nQuestions regarding personal circumstances may be shared through e-mail with the teaching team. Please don’t use e-mail for other questions unless it cannot be avoided - we’d prefer if you ask us in class or open an issue in the course repo.",
     "crumbs": [
       "Course overview"
     ]
