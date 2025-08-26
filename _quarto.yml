@@ -4,8 +4,8 @@ project:
 
 book:
   title: "Markup Languages and Reproducible Programming in Statistics"
-  repo-url: https://github.com/gerkovink/markup
-  repo-branch: book
+  repo-url: https://github.com/mlarpis/markup
+  repo-branch: main
   repo-actions: [edit, issue]
   author: 
   - name: Gerko Vink
