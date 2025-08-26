@@ -49,7 +49,7 @@ You **may use** any and all content in this presentation - **excluding names** -
 
 Open Source:
 
-- [www.gerkovink.com/markup](https://www.gerkovink.com/markup) & [github.com/gerkovink/markup](https://github.com/gerkovink/markup)
+- [mlarpis.github.io/markup](https://mlarpis.github.io/markup) & [github.com/mlarpis/markup](https://github.com/mlarpis/markup)
 
 ## FYI
 <center>
@@ -81,12 +81,12 @@ Open Source:
 ::: callout-important
 We won't use Blackboard or any other such system. All materials can be found at
 
-[www.gerkovink.com/markup](https://www.gerkovink.com/markup)
+[mlarpis.github.io/markup](https://mlarpis.github.io/markup/)
 
 ### Hand in
 All contributions to this course are to be delivered by email link to us, where the link leads to your downloaded completed zip of [this template repository](https://github.com/hanneoberman/markup_deliverables/tree/dev)
 
-Please post your content-related questions as [an issue in the course repository](https://github.com/gerkovink/markup/issues)
+Please post your content-related questions as [an issue in the course repository](https://github.com/mlarpis/markup/issues)
 
 ### Finalization
 Deadline for all is **Jan 19 2025**. Grades will be available **Feb 2 2025**
