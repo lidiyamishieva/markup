@@ -89,7 +89,7 @@ All contributions to this course are to be delivered by email link to us, where 
 Please post your content-related questions as [an issue in the course repository](https://github.com/mlarpis/markup/issues)
 
 ### Finalization
-Deadline for all is **Jan 19 2025**. Grades will be available **Feb 2 2025**
+Deadline for all is **Jan 19 2026**. Grades will be available **Feb 2 2026**
 :::
 
 ## Deliverables
