@@ -18,6 +18,11 @@ book:
     email: h.i.oberman@uu.nl
     # affiliations: 
     # - name: 
+  - name: Pablo Mosteiro
+    orcid: 0000-0001-7231-2773
+    email: p.mosteiro@uu.nl
+    # affiliations:
+    # -name:
   date: last-modified
   chapters:
     - index.qmd

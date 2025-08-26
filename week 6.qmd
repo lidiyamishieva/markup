@@ -7,7 +7,7 @@
 
 We discussed the flow of creating [`R` packages](https://r-pkgs.org/) and [`Shiny` apps](https://shiny.posit.co). Along the way, we touched upon the importance of version control, testing and documentation. A static version of Hanne's Shiny slides [can be found here](slides/lec-shiny.pdf).
 
-You can join the Teams during the lecture (for screen sharing) [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTEzYzYxYTItNWE3NS00YTczLTg5MGEtMmY4YTM5NGI4Mjg2%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d) and see the recording of the R-package creation in the above teams link after class or see last year's recording [here](https://www.dropbox.com/scl/fi/hscfsrh30slk23k7z6d1d/wk6_recording.mp4?rlkey=yhy7wt8ldfmsybbb3000z1hl0&dl=0) (download for the 1h+ recording)
+You can see a previous year's recording [here](https://www.dropbox.com/scl/fi/hscfsrh30slk23k7z6d1d/wk6_recording.mp4?rlkey=yhy7wt8ldfmsybbb3000z1hl0&dl=0) (download for the 1h+ recording)
 :::
 
 ## `R` packages

@@ -4,10 +4,10 @@ This [Quarto](https://quarto.org) book contains the course materials and informa
 
 | Week                  | Date   | Focus                                       | Location                                                |
 |-----------------------|--------|---------------------------------------------|---------------------------------------------------------|
-| @sec-wk1 | 11 Sep | Introduction to Markup Languages; and LaTeX | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
-| @sec-wk2 | 25 Sep | Markdown in (most) Flavors                  | [BOL 1049](https://students.uu.nl/bolognalaan-101)      |
-| @sec-wk3 | 16 Okt | Version Control and Development Flow        | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
-| @sec-wk4 | 06 Nov | Reproducible Research Repositories          | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
-| @sec-wk5 | 20 Nov | Creating and Publishing a Developer Portfolio                         | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
-| @sec-wk6 | 04 Dec | Packages, Code Robustness and Unit Testing  | [BOL 1049](https://students.uu.nl/bolognalaan-101)      |
+| @sec-wk1 | 10 Sep | Introduction to Markup Languages; and LaTeX | [BOL - 1.025](https://students.uu.nl/bolognalaan-101)      |
+| @sec-wk2 | 24 Sep | Markdown in (most) Flavors                  | [BOL - 1.025](https://students.uu.nl/bolognalaan-101)      |
+| @sec-wk3 | 15 Oct | Version Control and Development Flow        | [BOL - 1.023](https://students.uu.nl/bolognalaan-101) |
+| @sec-wk4 | 05 Nov | Reproducible Research Repositories          | [BOL - 1.025](https://students.uu.nl/bolognalaan-101)      |
+| @sec-wk5 | 19 Nov | Creating and Publishing a Developer Portfolio                         | [DALTON 500 - 5.08](https://students.uu.nl/daltonlaan-500-0)      |
+| @sec-wk6 | 03 Dec | Packages, Code Robustness and Unit Testing  | [BOL - 1.049](https://students.uu.nl/bolognalaan-101)      |
 
