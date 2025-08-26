@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-626149efe8f5d16e1d391ba177679bf0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -127,7 +127,7 @@ window.Quarto = {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Markup Languages and Reproducible Programming in Statistics</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/gerkovink/markup" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/mlarpis/markup" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -225,7 +225,7 @@ window.Quarto = {
   <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support">Support</a></li>
   <li><a href="#syllabus" id="toc-syllabus" class="nav-link" data-scroll-target="#syllabus">Syllabus</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/gerkovink/markup/edit/book/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mlarpis/markup/edit/main/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mlarpis/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -253,8 +253,8 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="general-information">General information</h2>
 <ul>
 <li>Course: <a href="https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&amp;taal=en&amp;collegejaar=huidig">Markup languages and reproducible programming in statistics (202000010)</a></li>
-<li>Course coordinator: Gerko Vink (<a href="mailto:g.vink@uu.nl">g.vink@uu.nl</a>)</li>
-<li>Teachers: Gerko Vink (<a href="mailto:g.vink@uu.nl">g.vink@uu.nl</a>) &amp; Hanne Oberman (<a href="mailto:h.i.oberman@uu.nl">h.i.oberman@uu.nl</a>)</li>
+<li>Course coordinator: Pablo Mosteiro (<a href="mailto:p.mosteiro@uu.nl">p.mosteiro@uu.nl</a>)</li>
+<li>Teachers: Pablo Mosteiro (<a href="mailto:p.mosteiro@uu.nl">p.mosteiro@uu.nl</a>) &amp; Hanne Oberman (<a href="mailto:h.i.oberman@uu.nl">h.i.oberman@uu.nl</a>)</li>
 <li>Schedule: <a href="https://mytimetable.uu.nl/link?timetable.type=timeedit_course&amp;timetable.key=202000010&amp;view=list&amp;ignoreNotFound=true&amp;ignoreEmpty=true">MyTimetable</a></li>
 </ul>
 </section>
@@ -266,7 +266,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="support">Support</h2>
 <p>We will not use the course page on Blackboard. Instead, all course materials can be found here on the course website, <a href="https://www.gerkovink.com/markup">www.gerkovink.com/markup</a>.</p>
 <ul>
-<li>For handing in assignments and deliverables, you can fork this repository <a href="https://github.com/hanneoberman/markup_deliverables/tree/dev">this template repository</a> following the flow outlined in <a href="deliverables.html#sec-deliv" class="quarto-xref"><span>What to hand in</span></a>.
+<li>For handing in assignments and deliverables, you can fork <a href="https://github.com/hanneoberman/markup_deliverables/tree/dev">this template repository</a> following the flow outlined in <a href="deliverables.html#sec-deliv" class="quarto-xref"><span>What to hand in</span></a>.
 <ul>
 <li>If you regularly update your fork, we can keep track of your progress.</li>
 </ul></li>
@@ -372,8 +372,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -484,7 +482,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -727,4 +724,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gerkovink/markup/edit/book/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/mlarpis/markup/edit/main/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mlarpis/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
