@@ -15,7 +15,7 @@ Welcome to `Quarto` - If you already know `rMarkdown`, it will be a breeze. If y
 
 All the best, 
 
-Gerko and Hanne
+The teaching team
 
 ---
 
