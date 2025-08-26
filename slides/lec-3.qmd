@@ -1,12 +1,17 @@
 ---
 title: "About me"
 author: 
-  - name: Gerko Vink
-    orcid: 0000-0001-9767-1924
-    email: g.vink@uu.nl
+  - name: Pablo Mosteiro
+    orcid: 0000-0001-7231-2773
+    email: p.mosteiro@uu.nl
     affiliations:
-      - name: Methodology & Statistics @ UU University
-date: 16 Oct 2024
+      - name: Methodology & Statistics @ UU
+  - name: Hanne Oberman
+    orcid: 0000-0003-3276-2141
+    email: h.i.oberman@uu.nl
+    affiliations:
+      - name: Methodology & Statistics @ UU
+date: 15 Oct 2025
 date-format: "D MMM YYYY"
 execute: 
   echo: true
@@ -26,7 +31,7 @@ format:
     toc-title: Outline
     scrollable: true
     reference-location: margin
-    footer: Gerko Vink - Markup Languages @ UU
+    footer: Pablo Mosteiro and Hanne Oberman - Markup Languages @ UU
 ---
 
 # qua patet orbis
