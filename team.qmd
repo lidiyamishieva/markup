@@ -9,6 +9,6 @@ Pablo has previously worked as an experimental particle physicist and as a comme
 
 ---
 
-![](images/team/hanne.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Hanne" width="200"}
+![](images/team/hanne.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Hanne" width="200"}
 
 Hanne Oberman is a Junior Assistant Professor and develops cool computational evaluation applications. Hanne is a key figure in Utrecht's Open Science Community and has a knack for new developments in creating and maintaining robust software. Hanne is a contributor and developer to multiple R-packages, some of which are in the top 10 packages developed at Utrecht University. Oh, and Hanne is much too polite, which is why [Gerko](https://www.gerkovink.com/) wrote this text on Hanne's behalf. You can reach Hanne at [h.i.oberman\@uu.nl](mailto:h.i.oberman@uu.nl) 
