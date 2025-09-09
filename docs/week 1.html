@@ -317,8 +317,8 @@ Lecture Week 1
 <li>creating tables and displaying figures</li>
 </ol>
 <p>Mastering a new <em>scripting</em> or <em>programming</em> environment is not done by simple exercises, but requires practice and repetition. Don’t worry, the documents you will have to produce during this course will require you to repeat the <code>LaTeX</code> process (Wk1) and the processes and skills in other weeks over and over. However, you should work together with others and share your insights, findings and documents. We’ll cover those bases in other weeks.</p>
-<p>Of course you will run into problems and/or difficulties. In general: the internet is your friend. Chances are that someone else encountered the same issue and, most likely, a solution has been posed by an expert user. If, however, you seem stuck; please post an issue on GitHub. Collectively, we can then troubleshoot your problem and help you reach a solution. Just remember that outside of class hours, answers may take a bit longer.</p>
-<p><code>LaTeX</code> is extremely flexible and allows you to typeset documents with ‘surgical precision’. There are however languages that allow you to create basic documents much quicker, but without the level of detail that <code>LaTeX</code> offers. One such a language is <code>Markdown</code>. This document is created with <code>quarto</code>, an implementation that goes far beyond <code>Markdown</code> and can be compiled from within <code>RStudio</code>. Of course it is required that you learn <code>LaTeX</code>, but since <code>Markdown</code> and <code>Quarto</code> allow for direct integration of <code>LaTeX</code> and <code>Html5</code>, it can be a very valuable tool. If you’d like to see the <code>Quarto</code> files (<code>.qmd</code>), feel free to browse around the course materials repository.</p>
+<p>Of course you will run into problems and/or difficulties. In general: the internet is your friend. Chances are that someone else encountered the same issue and, most likely, a solution has been posed by an expert user. If, however, you seem stuck, please post an issue on GitHub. Collectively, we can then troubleshoot your problem and help you reach a solution. Just remember that outside of class hours, answers may take a bit longer.</p>
+<p><code>LaTeX</code> is extremely flexible and allows you to typeset documents with ‘surgical precision’. There are however languages that allow you to create basic documents much quicker, but without the level of detail that <code>LaTeX</code> offers. One such a language is <code>Markdown</code>. This document is created with <code>quarto</code>, an implementation that goes far beyond <code>Markdown</code> and can be compiled from within <code>RStudio</code>. Since <code>Markdown</code> and <code>Quarto</code> allow for direct integration of <code>LaTeX</code> and <code>Html5</code>, they can be very valuable tools. If you’d like to see the <code>Quarto</code> files (<code>.qmd</code>), feel free to browse around the course materials repository.</p>
 <p>Enough general intro. Let’s start</p>
 <hr>
 </section>
@@ -326,7 +326,7 @@ Lecture Week 1
 <h2 data-number="1.2" class="anchored" data-anchor-id="the-tex-framework"><span class="header-section-number">1.2</span> The <code>TeX</code> framework</h2>
 <p>TeX’s structure bares close resemblance to that of the <code>R-project</code>. The core functionality can easily be expanded by users by means of packages. These packages are stored in a centralized location called the <a href="https://www.ctan.org/">Comprehensive TeX Archive Network (CTAN)</a>. The <code>TexLive</code> and <code>MacTex</code> distributions contain an image of many of the available packages, meaning that you will have most functionality available at all times (even offline).</p>
 <p>Just like with <code>R</code>, <code>TeX</code> is a software implementation that requires an editor to work with. <code>LaTeX</code> is a set of macros that make <code>TeX</code> easier for the users. From this moment on, if I speak about <code>TeX</code>, I am most likely refering to <code>LaTeX</code>.</p>
-<p><code>TeX</code> is widely used by publishers as it give the user full control about the appearance of the document. It is designed to <em>write</em> in such a way that a minimum of attention is required by the user to typeset the document (as opposed to e.g.&nbsp;<del>typesetting hell</del> MS Word).</p>
+<p><code>TeX</code> is widely used by publishers as it gives the user full control about the appearance of the document. It is designed to <em>write</em> in such a way that a minimum of attention is required by the user to typeset the document (as opposed to e.g.&nbsp;<del>typesetting hell</del> MS Word).</p>
 <hr>
 <section id="installing-a-tex-framework" class="level3" data-number="1.2.1">
 <h3 data-number="1.2.1" class="anchored" data-anchor-id="installing-a-tex-framework"><span class="header-section-number">1.2.1</span> Installing a <code>TeX</code> framework</h3>
@@ -447,20 +447,14 @@ Exercise on <code>TeX</code> classes - optional
 </section>
 <section id="getting-jumpstarted-with-latex-bibliographies-citing-and-compiling" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="getting-jumpstarted-with-latex-bibliographies-citing-and-compiling"><span class="header-section-number">1.4</span> Getting jumpstarted with <code>LaTeX</code>, bibliographies, citing and compiling</h2>
-<p>I have created many documents and walkthroughs about <code>TeX</code> and <code>LaTeX</code>, most of which are already outdated.</p>
-<ul>
-<li><a href="https://www.gerkovink.com/oldmarkup/Archive/2019/index.html#week-1">Bibliographies in <code>LaTeX</code></a> with <a href="https://www.gerkovink.com/oldmarkup/Archive/2019/Wk1/Solutions.zip">Answers</a></li>
-<li><a href="https://www.gerkovink.com/oldmarkup/Archive/2019/Wk3/Exercise_4.html">Figures and Tables</a> with <a href="https://www.gerkovink.com/oldmarkup/Archive/2019/Wk3/Answer/2.%20Solution%20in%20Tex.tex">Answers</a></li>
-<li><a href="https://www.gerkovink.com/oldmarkup/Archive/2019/Wk2/Exercise%203/Exercise_3.html">Mathematical notation and presentations</a> with <a href="https://www.gerkovink.com/oldmarkup/Archive/2019/Wk2/Solution.zip">Answers</a></li>
-</ul>
-<p>The folks at <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">Overleaf</a> have provided a much more up-to-date series. I suggest that you go throught the following chapters:</p>
+<p><a href="https://www.overleaf.com">Overleaf</a> provides a series of documents and walkthroughs about <code>TeX</code> and <code>LaTeX</code>. I suggest that you go throught the following chapters:</p>
 <ol type="1">
 <li><a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">Learn <code>LaTeX</code> in 30 minutes</a></li>
-<li>Because most of you are new to LaTeX, I suggest you learn <code>biblatex</code>: <a href="https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX">Bibliography management with biblatex</a></li>
+<li><a href="https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX">Bibliography management with biblatex</a></li>
 <li><a href="https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler">Choosing a <code>LaTeX</code> compiler</a></li>
 <li><a href="https://www.overleaf.com/learn/latex/Mathematical_expressions">Mathematical notation in <code>LaTeX</code></a></li>
 </ol>
-<p>If - like me (Gerko) - you still come across new notation conventions and would like to know how to write expressions with it in <code>LaTeX</code>: use <a href="https://detexify.kirelabs.org/classify.html"><code>detexify</code></a> to draw the symbol and obtain the <code>LaTeX</code> code.</p>
+<p>If you still across new notation conventions and would like to know how to write expressions with them in <code>LaTeX</code>, use <a href="https://detexify.kirelabs.org/classify.html"><code>detexify</code></a> to draw the symbol and obtain the <code>LaTeX</code> code.</p>
 <hr>
 </section>
 <section id="further-reading" class="level2" data-number="1.5">
@@ -477,7 +471,7 @@ Exercise on <code>TeX</code> classes - optional
 </section>
 <section id="exercise-for-this-week" class="level2" data-number="1.6">
 <h2 data-number="1.6" class="anchored" data-anchor-id="exercise-for-this-week"><span class="header-section-number">1.6</span> Exercise for this week</h2>
-<p>Create a document that contains [1-5] and then change the document with [6]. Submit both documents as well as the <code>LaTeXdiff</code>.</p>
+<p>Create a document that contains items 1 thru 5 (see below) and then change the document with item 6. Submit both documents as well as the <code>LaTeXdiff</code>.</p>
 <ol type="1">
 <li>A titlepage</li>
 <li>An equation</li>

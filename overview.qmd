@@ -12,9 +12,9 @@
 This course gives an overview of the state-of-the-art in statistical markup, reproducible programming and scientific digital representation. Students will get to know the professional field of statistical markup and its innovations and challenges. It consists of meetings in which students will learn about markup languages ($\LaTeX$ and Markdown), learn efficient programming with R Markdown, experience developing Shiny web apps, get to know version control with Git and will create and maintain their own data archive repository and personal (business card) page through GitHub. Combining these lectures, the students get acquainted with different viewpoints on marking up statistical manuscripts, areas of innovation, and challenges that people face when working with, analyzing and reporting (simulated) data. Knowledge obtained from this course will help students face multidimensional problems during their professional career.
 
 ## Support
-We will not use the course page on Blackboard. Instead, all course materials can be found here on the course website, [https://mlarpis.github.io/markup](https://mlarpis.github.io/markup).
+We will not use Brightspace. Instead, all course materials can be found here on the course website, [https://mlarpis.github.io/markup](https://mlarpis.github.io/markup).
 
-- For handing in assignments and deliverables, you can fork [this template repository](https://github.com/hanneoberman/markup_deliverables/tree/dev) following the flow outlined in @sec-deliv.
+- For handing in assignments and deliverables, you can fork [this template repository](https://github.com/mlarpis/portfolio) following the flow outlined in @sec-deliv.
   - If you regularly update your fork, we can keep track of your progress.
 - Please post your content-related questions as [an issue in the course repository](https://github.com/mlarpis/markup/issues).
 

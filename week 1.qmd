@@ -25,10 +25,10 @@ I will take you through the basics of the scientific `LaTeX` family in a couple 
 
 Mastering a new *scripting* or *programming* environment is not done by simple exercises, but requires practice and repetition. Don't worry, the documents you will have to produce during this course will require you to repeat the `LaTeX` process (Wk1) and the processes and skills in other weeks over and over. However, you should work together with others and share your insights, findings and documents. We'll cover those bases in other weeks.
 
-Of course you will run into problems and/or difficulties. In general: the internet is your friend. Chances are that someone else encountered the same issue and, most likely, a solution has been posed by an expert user. If, however, you seem stuck; please post an issue on GitHub. Collectively, we can then troubleshoot your problem and help you reach a solution. Just remember that outside of class hours, answers may take a bit longer. 
+Of course you will run into problems and/or difficulties. In general: the internet is your friend. Chances are that someone else encountered the same issue and, most likely, a solution has been posed by an expert user. If, however, you seem stuck, please post an issue on GitHub. Collectively, we can then troubleshoot your problem and help you reach a solution. Just remember that outside of class hours, answers may take a bit longer. 
 
 
-`LaTeX` is extremely flexible and allows you to typeset documents with 'surgical precision'. There are however languages that allow you to create basic documents much quicker, but without the level of detail that `LaTeX` offers. One such a language is `Markdown`. This document is created with `quarto`, an implementation that goes far beyond `Markdown` and can be compiled from within `RStudio`. Of course it is required that you learn `LaTeX`, but since `Markdown` and `Quarto` allow for direct integration of `LaTeX` and `Html5`, it can be a very valuable tool. If you'd like to see the `Quarto` files (`.qmd`), feel free to browse around the course materials repository.
+`LaTeX` is extremely flexible and allows you to typeset documents with 'surgical precision'. There are however languages that allow you to create basic documents much quicker, but without the level of detail that `LaTeX` offers. One such a language is `Markdown`. This document is created with `quarto`, an implementation that goes far beyond `Markdown` and can be compiled from within `RStudio`. Since `Markdown` and `Quarto` allow for direct integration of `LaTeX` and `Html5`, they can be very valuable tools. If you'd like to see the `Quarto` files (`.qmd`), feel free to browse around the course materials repository.
 
 Enough general intro. Let's start
 
@@ -39,7 +39,7 @@ TeX's structure bares close resemblance to that of the `R-project`. The core fun
 
 Just like with `R`, `TeX` is a software implementation that requires an editor to work with. `LaTeX` is a set of macros that make `TeX` easier for the users. From this moment on, if I speak about `TeX`, I am most likely refering to `LaTeX`. 
 
-`TeX` is widely used by publishers as it give the user full control about the appearance of the document. It is designed to *write* in such a way that a minimum of attention is required by the user to typeset the document (as opposed to e.g. ~~typesetting hell~~ MS Word). 
+`TeX` is widely used by publishers as it gives the user full control about the appearance of the document. It is designed to *write* in such a way that a minimum of attention is required by the user to typeset the document (as opposed to e.g. ~~typesetting hell~~ MS Word). 
 
 ---
 
@@ -159,20 +159,14 @@ You just need to specify the paragraphs correctly. The solution to this exercise
 
 ## Getting jumpstarted with `LaTeX`, bibliographies, citing and compiling
 
-I have created many documents and walkthroughs about `TeX` and `LaTeX`, most of which are already outdated.
-
-- [Bibliographies in `LaTeX`](https://www.gerkovink.com/oldmarkup/Archive/2019/index.html#week-1) with [Answers](https://www.gerkovink.com/oldmarkup/Archive/2019/Wk1/Solutions.zip)
-- [Figures and Tables](https://www.gerkovink.com/oldmarkup/Archive/2019/Wk3/Exercise_4.html) with [Answers](https://www.gerkovink.com/oldmarkup/Archive/2019/Wk3/Answer/2.%20Solution%20in%20Tex.tex)
-- [Mathematical notation and presentations](https://www.gerkovink.com/oldmarkup/Archive/2019/Wk2/Exercise%203/Exercise_3.html) with [Answers](https://www.gerkovink.com/oldmarkup/Archive/2019/Wk2/Solution.zip)
-
-The folks at [Overleaf](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) have provided a much more up-to-date series. I suggest that you go throught the following chapters:
+[Overleaf](https://www.overleaf.com) provides a series of documents and walkthroughs about `TeX` and `LaTeX`. I suggest that you go throught the following chapters:
 
 1. [Learn `LaTeX` in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
-2. Because most of you are new to LaTeX, I suggest you learn `biblatex`: [Bibliography management with biblatex](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX)
+2. [Bibliography management with biblatex](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX)
 3. [Choosing a `LaTeX` compiler](https://www.overleaf.com/learn/latex/Choosing_a_LaTeX_Compiler)
 4. [Mathematical notation in `LaTeX`](https://www.overleaf.com/learn/latex/Mathematical_expressions)
 
-If - like me (Gerko) - you still come across new notation conventions and would like to know how to write expressions with it in `LaTeX`: use [`detexify`](https://detexify.kirelabs.org/classify.html) to draw the symbol and obtain the `LaTeX` code. 
+If you still across new notation conventions and would like to know how to write expressions with them in `LaTeX`, use [`detexify`](https://detexify.kirelabs.org/classify.html) to draw the symbol and obtain the `LaTeX` code. 
 
 ---
 
@@ -189,7 +183,7 @@ Even though the internet may hold most answers to your problem, please don't str
 ---
 
 ## Exercise for this week
-Create a document that contains [1-5] and then change the document with [6]. Submit both documents as well as the `LaTeXdiff`.
+Create a document that contains items 1 thru 5 (see below) and then change the document with item 6. Submit both documents as well as the `LaTeXdiff`.
 
 1. A titlepage
 2. An equation
