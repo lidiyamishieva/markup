@@ -28,6 +28,7 @@ This course website serves as syllabus. Background information, e.g. about cours
 The learning activities in this course include lectures/seminars, supervised labs with exercises/tutorials, and throughout the course students will work on a portfolio with deliverables. 
 
 The topics discussed in this course are:
+
 1  Markup languages
 2  Quarto markdown
 3  Version control (with git and GitHub)
