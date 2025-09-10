@@ -11,3 +11,4 @@ This [Quarto](https://quarto.org) book contains the course materials and informa
 | @sec-wk5 | 19 Nov | Creating and Publishing a Developer Portfolio                         | [DALTON 500 - 5.08](https://students.uu.nl/daltonlaan-500-0)      |
 | @sec-wk6 | 03 Dec | Packages, Code Robustness and Unit Testing  | [BOL - 1.049](https://students.uu.nl/bolognalaan-101)      |
 
+test rendering
