@@ -52,8 +52,7 @@ In order to demonstrate the creation of an R-package, we will identify some odd 
 ```{r}
 #| warning: false
 
-library(dplyr)
-c(0.5, 1.5, 2.5, 3.5) %>% round()
+c(0.5, 1.5, 2.5, 3.5) |> round()
 ```
 We can see that `R` rounds - by default -  the number `1.5` to integer `2` and the number `2.5` also to integer `2`. The reason for this behaviour is the IEC 60559 standard where a 5 is expected to be rounded to the even digit. 
 
@@ -61,18 +60,18 @@ If we'd like to round up to the next integer, we can easily define the following
 ```{r}
 rounder <- function(x){
   diff <- x - floor(x)
-  out <- x %>% ceiling()
+  out <- ceiling(x)
   out[diff < .5] <- floor(x)[diff < .5]
   return(out)
 }
 ```
 where the vector `c(0.5, 1.5, 2.5, 3.5)` is rounded up to the *next* integer
 ```{r}
-c(0.5, 1.5, 2.5, 3.5) %>% rounder()
+c(0.5, 1.5, 2.5, 3.5) |> rounder()
 ```
 and where the vector `c(0.49, 1.49, 2.49, 3.49)` is rounded down to the *previous* integer
 ```{r}
-c(0.49, 1.49, 2.49, 3.49) %>% rounder()
+c(0.49, 1.49, 2.49, 3.49) |> rounder()
 ```
 
 ## Create `R`-package `roundR`
@@ -83,6 +82,7 @@ The goal of this document is to create the code for the `rounder()` function int
 #### Packages and sources needed
 We need the following packages to help us with building, testing and maintaining our package:
 ```{r}
+#| eval: false
 #| warning: false
 
 library(devtools) # development tools
@@ -202,13 +202,13 @@ In `R`, when you have executed `usethis::use_r()` and have filled in your `R` co
 #' @author Gerko Vink \email{g.vink@uu.nl} and Hanne Oberman \email{h.i.oberman@uu.nl}
 #' @examples
 #' # rounds weirdly
-#' c(0.5, 1.5, 2.5, 3.5) %>% round()
+#' c(0.5, 1.5, 2.5, 3.5) |> round()
 #' # rounds correctly
-#' c(0.5, 1.5, 2.5, 3.5) %>% rounder()
+#' c(0.5, 1.5, 2.5, 3.5) |> rounder()
 #'
 rounder <- function(x) {
   diff <- x - floor(x)
-  out <- x %>% ceiling()
+  out <- x |> ceiling()
   out[diff < .5] <- floor(x)[diff < .5]
   return(out)
 }
@@ -253,22 +253,22 @@ We can see under `build > check` that our current package yields 1 error, 1 warn
 
     ...
   
-  > c(0.5, 1.5, 2.5, 3.5) %>% round()
-  Error in c(0.5, 1.5, 2.5, 3.5) %>% round() : 
-    could not find function "%>%"
+  > c(0.5, 1.5, 2.5, 3.5) |> round()
+  Error in c(0.5, 1.5, 2.5, 3.5) |> round() : 
+    could not find function "|>"
   Execution halted
 ```
 
-The error stems from the examples in our documentation. The examples use the binary function `%>%` from package `magrittr`, but we did not load that package in the example. Remember that these examples are self-contained and that any dependent packages need to be explicitly loaded via `library()` for the code to run. Just like any other `R` instance. Simply adding `library(magrittr)` to the example code will solve the issue. 
+The error stems from the examples in our documentation. The examples use the binary function `|>` from package `magrittr`, but we did not load that package in the example. Remember that these examples are self-contained and that any dependent packages need to be explicitly loaded via `library()` for the code to run. Just like any other `R` instance. Simply adding `library(magrittr)` to the example code will solve the issue. 
 
 Add `library(magrittr)` to the example code:
 ```{r eval = FALSE}
 #' @examples
 #' library(magrittr)
 #' # rounds weirdly
-#' c(0.5, 1.5, 2.5, 3.5) %>% round()
+#' c(0.5, 1.5, 2.5, 3.5) |> round()
 #' # rounds correctly
-#' c(0.5, 1.5, 2.5, 3.5) %>% rounder()
+#' c(0.5, 1.5, 2.5, 3.5) |> rounder()
 ```
 
 ##### Warning
@@ -294,16 +294,16 @@ Correct the faulty crossreferences in the documentation:
 ##### Note
 ```{r eval = FALSE}
 ❯ checking R code for possible problems ... NOTE
-  rounder: no visible global function definition for ‘%>%’
+  rounder: no visible global function definition for ‘|>’
   Undefined global functions or variables:
-    %>%
+    |>
 ```
 
-We use function `%>%` from package `magrittr`, but we neglected to make explicit that this function should have been imported from package `magrittr`. In other words, `R` needs to know that our package `roundR` would depend on package `magrittr` for its functionality to work. 
+We use function `|>` from package `magrittr`, but we neglected to make explicit that this function should have been imported from package `magrittr`. In other words, `R` needs to know that our package `roundR` would depend on package `magrittr` for its functionality to work. 
 
 We can fix this by runnin the following `usethis` evaluation in the console:
 ```{r eval = FALSE}
-usethis::use_import_from("magrittr", "%>%")
+usethis::use_import_from("magrittr", "|>")
 ```
 
 When asked
@@ -325,9 +325,9 @@ Once you have selected the correct option, we can re-run the `CHECK`. You will f
   
   ...
   
-  > c(0.5, 1.5, 2.5, 3.5) %>% rounder()
+  > c(0.5, 1.5, 2.5, 3.5) |> rounder()
   Error in rounder(.) : could not find function "rounder"
-  Calls: %>%
+  Calls: |>
   Execution halted
 ```
 
@@ -405,8 +405,8 @@ The proper structure for test files has now been created:
 You are asked to modify the `tests/testthat/test-rounder.R` file. Replace the example test with:
 ```{r eval = FALSE}
 test_that("rounder works", {
-  A <- c(0.5, 1.5, 2.5, 3.5) %>% rounder()
-  B <- c(0.49, 1.49, 2.49, 3.49) %>% rounder()
+  A <- c(0.5, 1.5, 2.5, 3.5) |> rounder()
+  B <- c(0.49, 1.49, 2.49, 3.49) |> rounder()
   expect_equal(A, c(1, 2, 3, 4))
   expect_equal(B, c(0, 1, 2, 3))
 })
@@ -417,10 +417,10 @@ test_that("rounder yields different results than round", {
             1.499999999999999999995,
             2.499999999999999999995,
             3.499999999999999999995)
-  A <- vec1 %>% rounder()
-  B <- vec1 %>% round()
-  C <- vec2 %>% rounder()
-  D <- vec2 %>% round()
+  A <- vec1 |> rounder()
+  B <- vec1 |> round()
+  C <- vec2 |> rounder()
+  D <- vec2 |> round()
   expect_false(identical(A, B))
   expect_false(identical(C, D))
 })
@@ -436,7 +436,7 @@ All test should pass, meaning that your `rounder()` function yields correct resu
 If test would fail, you'd be notified. For example
 ```{r error=TRUE}
 test_that("rounder works", {
-  A <- c(0.5, 1.5, 2.5, 3.5) %>% rounder()
+  A <- c(0.5, 1.5, 2.5, 3.5) |> rounder()
   expect_equal(A, c(4, 3, 2, 1))
   })
 ```

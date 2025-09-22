@@ -46,8 +46,6 @@ format:
     toc-depth: 3
     include-after-body: custom.html
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
 
 
 
