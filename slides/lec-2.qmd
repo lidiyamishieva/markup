@@ -442,7 +442,7 @@ library(plotly, warn.conflicts = FALSE)
 p <- ggplot(mpg, aes(displ, hwy, colour = class)) +
   geom_point() +
   geom_smooth(se = FALSE, method = lm) 
-p %>% ggplotly()
+ggplotly(p)
 ```
 
 ## Equations
@@ -563,12 +563,11 @@ The following code block
 #| code-line-numbers: true
 #| label: imputation
 library(mice)
-library(magrittr)
 library(purrr)
-imp <- nhanes %>% mice(print = FALSE)
+imp <- nhanes |> mice(print = FALSE)
 imp |>
-  complete("all") %>% 
-  map(~.x %$% lm(bmi ~ chl + hyp)) |>
+  complete("all") |> 
+  map(~lm(bmi ~ chl + hyp, data = .x)) |>
   pool()
 ```
 
@@ -579,12 +578,11 @@ would result in this output
 #| code-line-numbers: true
 #| label: imputation
 library(mice)
-library(magrittr)
 library(purrr)
-imp <- nhanes %>% mice(print = FALSE)
+imp <- nhanes |> mice(print = FALSE)
 imp |>
-  complete("all") %>% 
-  map(~.x %$% lm(bmi ~ chl + hyp)) |>
+  complete("all") |> 
+  map(~lm(bmi ~ chl + hyp, data = .x)) |>
   pool()
 ```
 
@@ -605,7 +603,7 @@ or use e.g. `library(DT)` for customization:
 
 ```{r}
 library(DT)
-mtcars %>% 
+mtcars |> 
   datatable(options = list(pageLength = 25))
 ```
 
@@ -718,9 +716,9 @@ renv::restore()
 #> 
 #> # Installing packages --------------------------------------------------------
 #> - Installing mice ...                           OK [linked from cache]
-imp <- nhanes %>% mice(print = FALSE)
+imp <- nhanes |> mice(print = FALSE)
 imp |>
-  complete("all") %>% 
+  complete("all") |> 
   map(~.x %$% lm(bmi ~ chl + hyp)) |>
   pool()
 #> Class: mipo    m = 5 
