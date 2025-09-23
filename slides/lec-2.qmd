@@ -33,6 +33,7 @@ format:
     scrollable: true
     reference-location: margin
     footer: Pablo Mosteiro and Hanne Oberman - Markup Languages @ UU
+    incremental: true
 ---
 
 ## Disclaimer {.smaller}
@@ -47,36 +48,64 @@ You **may use** any and all content in this presentation - **excluding names** -
 - You must ensure that the content is not used for further training of the model
 :::
 
-## RStudio
 
-![](images/lec-2/Rstudio.png){width="70%"}
 
-## `RStudio` - Integrated Development Environment (IDE) for `R`
+<!-- ## RStudio -->
 
--   **RStudio** is a powerful integrated development environment (IDE) designed specifically for the R programming language.
--   It offers a user-friendly interface and a suite of tools to enhance your R coding experience.
+<!-- ![](images/lec-2/Rstudio.png){width="70%"} -->
 
-### Key Features of RStudio
+<!-- ## `RStudio` - Integrated Development Environment (IDE) for `R` -->
 
--   **1. Code Editing**: RStudio provides a code editor with syntax highlighting, autocompletion, and error checking, making your coding process more efficient.
+<!-- -   **RStudio** is a powerful integrated development environment (IDE) designed specifically for the R programming language. -->
+<!-- -   It offers a user-friendly interface and a suite of tools to enhance your R coding experience. -->
 
--   **2. Console**: An interactive R console allows you to execute `R` code line by line and view results in real time.
+<!-- ### Key Features of RStudio -->
 
--   **3. Environment Pane**: Keep track of your variables, data frames, and functions with the environment pane.
+<!-- -   **1. Code Editing**: RStudio provides a code editor with syntax highlighting, autocompletion, and error checking, making your coding process more efficient. -->
 
--   **4. Plots and Visualizations**: Create and view plots, charts, and visualizations within RStudio.
+<!-- -   **2. Console**: An interactive R console allows you to execute `R` code line by line and view results in real time. -->
 
--   **5. Integrated Help**: Access `R` documentation, packages, and online resources directly from the IDE.
+<!-- -   **3. Environment Pane**: Keep track of your variables, data frames, and functions with the environment pane. -->
 
--   **6. Version Control**: Easily integrate `R` projects with version control systems like Git.
+<!-- -   **4. Plots and Visualizations**: Create and view plots, charts, and visualizations within RStudio. -->
 
--   **7. Markdown Support**: RStudio seamlessly integrates with Markdown, making it an ideal choice for creating reproducible reports and documents.
+<!-- -   **5. Integrated Help**: Access `R` documentation, packages, and online resources directly from the IDE. -->
 
-It plays a crucial role in promoting reproducibility and collaboration in data science and statistical analysis.
+<!-- -   **6. Version Control**: Easily integrate `R` projects with version control systems like Git. -->
 
-## RMarkdown, GitHub-Flavored Markdown, and Quarto
+<!-- -   **7. Markdown Support**: RStudio seamlessly integrates with Markdown, making it an ideal choice for creating reproducible reports and documents. -->
 
--   **Markdown** is a lightweight markup language for creating formatted text using plain text. It's easy to learn and widely used in various applications.
+<!-- It plays a crucial role in promoting reproducibility and collaboration in data science and statistical analysis. -->
+
+## Today's lecture
+
+- Markdown
+- Structure
+- Text
+- Tables & figures
+- Code & output
+- References
+
+## Take aways
+
+- Quarto markdown is tool to integrate text, figures, code and output
+- Quarto enables data scientists/statisticians to communicate (re)productively
+- There is a universe of plugins and add-ons to make your academic life easier
+
+## What is Markdown?
+
+**Markdown** is a lightweight markup language for creating formatted text using plain text. It's easy to learn and widely used in various applications.
+
+![](https://mdg.imgix.net/assets/images/markdown-flowchart.png)
+
+## Markdown basics
+
+Plain text with maukup instructions (e.g. `*italics*`) 
+
+is converted to marked up text (e.g. *italics*)
+
+
+## Markdown flavours
 
 -   **GitHub-Flavored Markdown (GFM)** is a variant of Markdown used on [GitHub](https://github.com) (next week), enhancing its capabilities for documentation and collaboration.
 
@@ -87,6 +116,7 @@ It plays a crucial role in promoting reproducibility and collaboration in data s
 -   **Quarto** is a comprehensive tool for creating reproducible and collaborative data science documents.
 
     -   Combines the power of Markdown, $\LaTeX$, and code execution to streamline document preparation.
+
 
 ## Popular Code Editors (for `R`)
 
@@ -104,13 +134,13 @@ It plays a crucial role in promoting reproducibility and collaboration in data s
 
 -   A Quarto document is organized into **blocks**, which serve as the fundamental building blocks of the document's content.
 -   Each block can contain a combination of the following elements:
+    -   **YAML Headers**: Metadata and document configuration.
+    -   **Sections and Subsections**: Structuring the document into hierarchical sections for organization.
     -   **Text**: Narrative content and explanations.
-    -   **Code**: R code chunks for computations and data analysis.
     -   **Equations**: Mathematical equations and notation.
     -   **Figures**: Visualizations, charts, and images.
     -   **Tables**: Data tables for presenting results.
-    -   **YAML Headers**: Metadata and document configuration.
-    -   **Sections and Subsections**: Structuring the document into hierarchical sections for organization.
+    -   **Code**: R code chunks for computations and data analysis.
 
 ## Quarto: the YAML header
 
@@ -826,16 +856,6 @@ quarto use template quarto-journals/jss
 
 ## Citations
 
-@eval and Cai, Van Buuren and Vink [-@cai2023graphical] are some of our team's most recent publications. Some references - such as some work by Reinder Banning and Gerko Vink are much older [-@banningvink] or contain simple and contemporary solutions by @vigntg [p. 2-4] or cool but potentially confusing images [@schouten2021dance, 1255].
-
-::: footer
-But you can also refer to @eval here
-:::
-
-::: {#refs}
-:::
-
-<br>
 
 ```         
 ## Citations
@@ -849,3 +869,22 @@ But you can also refer to @eval here
 ::: {#refs}
 :::
 ```
+
+
+@eval and Cai, Van Buuren and Vink [-@cai2023graphical] are some of our team's most recent publications. Some references - such as some work by Reinder Banning and Gerko Vink are much older [-@banningvink] or contain simple and contemporary solutions by @vigntg [p. 2-4] or cool but potentially confusing images [@schouten2021dance, 1255].
+
+::: footer
+But you can also refer to @eval here
+:::
+
+::: {#refs}
+:::
+
+<br>
+
+## Take aways
+
+- Quarto markdown is tool to integrate text, figures, code and output
+- Quarto enables data scientists/statisticians to communicate (re)productively
+- There is a universe of plugins and add-ons to make your academic life easier
+
