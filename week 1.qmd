@@ -219,7 +219,7 @@ data.all <- cbind(data = data,
 
 ### Handing in the exercise
 1. Fork the template repository detailed in @sec-deliv. 
-2. Add your files to the respective folder in the `dev` branch. Not in the main branch!
+2. Add your files to the respective folder.
 3. Share your repository link as an issue in the course repository.
 
 If you know how to use `git`, go ahead. If you don't, no panic. We'll cover that in week 3. In the meantime you can use the `> add file` functionality on GitHub as illustrated below. 
