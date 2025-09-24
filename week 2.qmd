@@ -39,7 +39,7 @@ Create a quarto presentation with 3 slides and a logo
 - a slide with your favourite equation
 - a slide with some source of information about you that (most of) your classmates do not know
 
-Bring this presentation to the next class
+Bring this presentation to the next class.
 
 ---
 
