@@ -1,3 +1,0 @@
-# TODO for next year 
-
-- move slides about IDEs from week 2 to week 1
