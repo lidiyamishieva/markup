@@ -1,5 +1,5 @@
 # GenAI rules {.unnumbered}
-You may use generative AI in this course if and only if you read the below paragraphs.
+The [AI index](https://www.uu.nl/en/organisation/ai-policy/students/ai-index) for this course is *c: GenAI use allowed when performing subtasks*. You may use generative AI in this course if and only if you read the below paragraphs.
 
 ## Copyright and intellectual property
 
