@@ -766,9 +766,9 @@ You should now have all the skills to fill your template with the course deliver
 
 ------------------------------------------------------------------------
 
-::: {.callout-caution collapse="true"}
 ### Solution
 
+::: {.callout-caution collapse="true"}
 ```{markdown}
 % git checkout -b Wk3_pablo
 Switched to a new branch 'Wk3_pablo'
@@ -777,15 +777,6 @@ Switched to a new branch 'Wk3_pablo'
 [Wk3_pablo 0211826] pablo`s commit
  1 file changed, 0 insertions(+), 0 deletions(-)
  rename add_text_file.txt => pablo.txt (100%)
-% git push
-fatal: The current branch Wk3_pablo has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin Wk3_pablo
-
-To have this happen automatically for branches without a tracking
-upstream, see 'push.autoSetupRemote' in 'git help config'.
-
 % git push --set-upstream origin Wk3_pablo
 Enumerating objects: 14, done.
 Counting objects: 100% (14/14), done.
@@ -802,4 +793,6 @@ To github.com:PabloMosUU/markup2020.git
  * [new branch]      Wk3_pablo -> Wk3_pablo
 branch 'Wk3_pablo' set up to track 'origin/Wk3_pablo'.
 ```
+
+Note that `git mv` both renames the file and stages the changes.
 :::
