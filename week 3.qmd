@@ -246,7 +246,7 @@ d.  Present a table containing all simulated samples for which the resulting con
 
 ## Exercise 2: `Git` it done
 
-This week we will also learn how to use `git` properly when we mess up. But let's not learn that on this year's repo ;-). Fork [this older course repository](https://github.com/gerkovink/markup2020), deselect `Copy the master branch only` in order to copy all branches.
+This week we will also learn how to use `git` properly when we mess up. But let's not learn that on this year's repo ;-). Fork [this older course repository](https://github.com/mlarpis/markup2020), deselect `Copy the master branch only` in order to copy all branches.
 
 ------------------------------------------------------------------------
 
@@ -766,30 +766,40 @@ You should now have all the skills to fill your template with the course deliver
 
 ------------------------------------------------------------------------
 
+::: {.callout-caution collapse="true"}
 ### Solution
 
 ```{markdown}
-% git branch Wk4_gerkovink 
-% git checkout Wk4_gerkovink
-Switched to branch 'Wk4_gerkovink'
-% mv add_text_file.txt gerkovink.txt
-% git add -A
-% git commit -m 'gerko`s commit'    
-[Wk4_gerkovink fb26e75] gerko`s commit
+% git checkout -b Wk3_pablo
+Switched to a new branch 'Wk3_pablo'
+% git mv add_text_file.txt pablo.txt
+% git commit -m 'pablo`s commit'
+[Wk3_pablo 0211826] pablo`s commit
  1 file changed, 0 insertions(+), 0 deletions(-)
- rename add_text_file.txt => gerkovink.txt (100%)
-% git push origin Wk4_gerkovink
-Enumerating objects: 15, done.
-Counting objects: 100% (15/15), done.
+ rename add_text_file.txt => pablo.txt (100%)
+% git push
+fatal: The current branch Wk3_pablo has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Wk3_pablo
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+% git push --set-upstream origin Wk3_pablo
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
 Delta compression using up to 8 threads
-Compressing objects: 100% (10/10), done.
-Writing objects: 100% (10/10), 1002 bytes | 1002.00 KiB/s, done.
-Total 10 (delta 7), reused 0 (delta 0)
-remote: Resolving deltas: 100% (7/7), completed with 3 local objects.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 876 bytes | 876.00 KiB/s, done.
+Total 9 (delta 5), reused 2 (delta 1), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
 remote: 
-remote: Create a pull request for 'Wk4_gerkovink' on GitHub by visiting:
-remote:      https://github.com/gerkovink/markup2020/pull/new/Wk4_gerkovink
+remote: Create a pull request for 'Wk3_pablo' on GitHub by visiting:
+remote:      https://github.com/PabloMosUU/markup2020/pull/new/Wk3_pablo
 remote: 
-To https://github.com/gerkovink/markup2020.git
- * [new branch]      Wk4_gerkovink -> Wk4_gerkovink
+To github.com:PabloMosUU/markup2020.git
+ * [new branch]      Wk3_pablo -> Wk3_pablo
+branch 'Wk3_pablo' set up to track 'origin/Wk3_pablo'.
 ```
+:::
