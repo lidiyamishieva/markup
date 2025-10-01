@@ -17,7 +17,7 @@ This week has no slides. We discuss the flow of development with `Git` in class.
 ::: {.column width="65%"}
 Dear all,
 
-As a statistician / data scientist / developer you'll need to master many skills. Some of these skills are made simple with tools. This week we'll bite the bullet by learning about two massively important tools for your toolset: **version controlling** and *simulation*.
+As a statistician / data scientist / developer you'll need to master many skills. Some of these skills are made simple with tools. This week we'll bite the bullet by learning about a massively important tool for your toolset: **version controlling**.
 
 To document our activity and our changes in detail, we'll use [`Git`](https://git-scm.com). You can view `Git` as the ability to go back in time. Back to the very beginning of your project. A bonus: `Git` integrates nicely with `RStudio`. In this series of exercises we will learn
 
@@ -26,11 +26,7 @@ To document our activity and our changes in detail, we'll use [`Git`](https://gi
 3.  How to go about development with `Git` and `GitHub`
 4.  How to solve scenarios where `Git` hits the fan.
 
-And in the meanwhile we'll also Monte-Carlo-simulate one of the most important concepts in statistics:
-
-5.  Confidence Validity
-
-Use the appropriate channels to ask questions and hand-in your work.
+Use the appropriate channels to ask questions and hand in your work.
 
 All the best,
 
@@ -80,8 +76,6 @@ The following links are very useful:
 -   [this online `Git` book](https://git-scm.com/book/en/v2) is a very good resource
 
 -   [This book](https://happygitwithr.com) covers pretty much everything you need to marry `Git` and `R`.
-
-In previous years, we also discussed Monte Carlo simulation in detail in class. If you want to learn more about this, then study [this old markup languages course page](https://www.gerkovink.com/oldmarkup/#week-1).
 
 ------------------------------------------------------------------------
 
@@ -209,38 +203,6 @@ In `RStudio`, paste the generated token in the password field when `RStudio` ask
 6.  Send a pull request (PR) to incorporate your changes into the `upstream/main` branch (i.e. `mlarpis/markup@main`). You can do this by going to your fork on `GitHub` and clicking the `Pull request` button. Make sure to select the correct branches.
 7. If you're fast enough, your commit will not result in a conflict. We will merge the PR's in the order they are presented in, as long as there are no conflicts. 
 8. If need be, update your PR by simply submitting another commit and pushing it to your fork. This will update the PR automatically.
-
-------------------------------------------------------------------------
-
-::: callout-tip
-## Monte Carlo simulation exercise (no need to hand in)
-
-Perform a small simulation that does the following:
-
-```{=html}
-<!-- -->
-```
-a.  Sample 100 samples from a standard normal distribution.
-b.  For each of these samples, calculate the following statistics for the mean:
-
--   absolute bias
--   standard error
--   lower bound of the 95% confidence interval
--   upper bound of the 95% confidence interval
-
-c.  Create a plot that demonstrates the following:
-
-***"A replication of the procedure that generates a 95% confidence interval that is centered around the sample mean would cover the population value at least 95 out of 100 times"*** [(Neyman, 1934)](https://www.google.nl/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjk4LaD6LrXAhUGC8AKHdATBhMQFggoMAA&url=http%3A%2F%2Fwww.stat.cmu.edu%2F~brian%2F905-2008%2Fpapers%2Fneyman-1934-jrss.pdf&usg=AOvVaw3KRw9DSklPihrYIM0_zRrC)
-
-d.  Present a table containing all simulated samples for which the resulting confidence interval does not contain the population value.
-:::
-
-::: {.callout-caution collapse="true"}
-### Solutions to the exercise
-
--   [Gerko's old solution to the MC exercise](https://www.gerkovink.com/oldmarkup/Wk1/Solution_to_Ex1.html)
--   [Gerko's new solution to the MC exercise](https://www.gerkovink.com/oldmarkup/Wk1/Solution_to_Ex1_future.html)
-:::
 
 ------------------------------------------------------------------------
 
