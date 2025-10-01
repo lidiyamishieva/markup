@@ -147,7 +147,7 @@ After that, you can work from the terminal using [git commands](https://git-scm.
 ### Command line interface vs. GUI
 
 Ultimately, you'll want to learn how to use `Git` through the command line interface (CLI). It offers better and more comprehensive functionality. Again, [take this 15-minute course](https://learngitbranching.js.org) to get a gentle introduction. 
-In week 4 we'll explore in detail how to handle `Git` when things go haywire. You'll be a CLI-wizard by then.
+Later we'll explore in detail how to handle `Git` when things go wrong. You'll be a CLI-wizard by then.
 
 ------------------------------------------------------------------------
 
