@@ -1,11 +1,11 @@
 # Version Control {#sec-wk3}
 
-**Also known as: `Git`, GitHub and avoiding potential `Git`shows**
+**Also known as: `Git` and GitHub**
 
 ::: callout-tip
 ## Lecture Week 3
 
-This week has no lecture. We discussed the flow of development with `Git` in class. You can find a 3-slide presentation exercise from week 2 [here](slides/lec-3.html)
+This week has no slides. We discuss the flow of development with `Git` in class. You can find a 3-slide presentation exercise from week 2 [here](slides/lec-3.html).
 
 :::
 
@@ -17,7 +17,7 @@ This week has no lecture. We discussed the flow of development with `Git` in cla
 ::: {.column width="65%"}
 Dear all,
 
-As a statistician / data scientist / developer you'll need to master many skills. Some of these skills are made simple with tools. This week we'll bite the bullet by learning about two massively important tools for your toolset: **version controlling** and *simulation*.
+As a statistician / data scientist / developer you'll need to master many skills. Some of these skills are made simple with tools. This week we'll bite the bullet by learning about a massively important tool for your toolset: **version controlling**.
 
 To document our activity and our changes in detail, we'll use [`Git`](https://git-scm.com). You can view `Git` as the ability to go back in time. Back to the very beginning of your project. A bonus: `Git` integrates nicely with `RStudio`. In this series of exercises we will learn
 
@@ -26,11 +26,7 @@ To document our activity and our changes in detail, we'll use [`Git`](https://gi
 3.  How to go about development with `Git` and `GitHub`
 4.  How to solve scenarios where `Git` hits the fan.
 
-And in the meanwhile we'll also Monte Carlo simulate one of the most important concepts in statistics:
-
-4.  Confidence Validity
-
-Use the appropriate channels to ask questions and hand-in your work.
+Use the appropriate channels to ask questions and hand in your work.
 
 All the best,
 
@@ -67,7 +63,9 @@ Read [Excuse me, do you have a moment to talk about version control?](https://pe
 
 ## Supplementary material
 
--   [Git](https://git-scm.com) The following links are very useful:
+-   [Git](https://git-scm.com) 
+
+The following links are very useful:
 
 -   An [old video walkthrough](https://www.gerkovink.com/oldmarkup/Archive/2019/Wk5/Solution%20Ex6.mp4) about `Git` and `Rstudio`
 
@@ -78,8 +76,6 @@ Read [Excuse me, do you have a moment to talk about version control?](https://pe
 -   [this online `Git` book](https://git-scm.com/book/en/v2) is a very good resource
 
 -   [This book](https://happygitwithr.com) covers pretty much everything you need to marry `Git` and `R`.
-
-In previous years, we also discussed Monte Carlo simulation in detail in class. If you want to learn more about this, then study [this old markup languages course page](https://www.gerkovink.com/oldmarkup/#week-1).
 
 ------------------------------------------------------------------------
 
@@ -104,11 +100,11 @@ If you'd like to know much more about `Git`, [this online book](https://git-scm.
 
 ### `GitHub`
 
-`GitHub` is the social and user interface to `Git` that allows you to work in [repositories](https://help.github.com/articles/github-glossary/#repository). These repositories can be seen as project folders in which you publish your work, but you can also use them as test sites for development, testing, etcetera. There is a distinction between [private repositories](https://help.github.com/articles/github-glossary/#private-repository) (only for you and those you grant access) and public repositories (visible for everyone).
+`GitHub` is the social and user interface to `Git` that allows you to work in [repositories](https://help.github.com/articles/github-glossary/#repository). These repositories can be seen as project folders in which you publish your work, but you can also use them as test sites for development, testing, etcetera. There is a distinction between [private repositories](https://help.github.com/articles/github-glossary/#private-repository) (only for you and those you grant access) and public repositories.
 
-Your public repositories can be viewed and [forked](https://help.github.com/articles/github-glossary/#fork) by everyone. `Forking` is when other people create a copy of your repository on their own account. This allows them to work on a repository without affecting the `master`. You can also do this yourself, but then the process is called [`branching`](https://help.github.com/articles/github-glossary/#branch) instead of forking. If you create a copy of a repository that is offline, the process is called [`cloning`](https://help.github.com/articles/github-glossary/#clone).
+Your public repositories can be viewed and [forked](https://help.github.com/articles/github-glossary/#fork) by everyone. `Forking` is when other people create a copy of your repository on their own account. This allows them to work on a repository without affecting the [master](https://docs.github.com/en/get-started/learning-about-github/github-glossary#master). You can also do this to your own repository, but then the process is called [`branching`](https://help.github.com/articles/github-glossary/#branch) instead of forking. If you create an offline copy of a repository, the process is called [`cloning`](https://help.github.com/articles/github-glossary/#clone).
 
-`GitHub`'s ability to branch, fork and clone is very useful as it allows other people and yourself to experiment on (the code in) a repository before any definitive changes are [`merged`](https://help.github.com/articles/github-glossary/#merge) with the `master`. If you're working in a forked repository, you can submit a [`pull request`](https://help.github.com/articles/github-glossary/#pull-request) to the repository collaborators to accept (or reject) any suggested changes.
+`GitHub`'s ability to branch, fork and clone is very useful as it allows other people and yourself to experiment on a repository before any definitive changes are [`merged`](https://help.github.com/articles/github-glossary/#merge) with the `master`. If you're working in a forked repository, you can submit a [`pull request`](https://help.github.com/articles/github-glossary/#pull-request) to the repository collaborators to accept or reject any suggested changes.
 
 For now, this may be confusing, but I hope you recognize the benefits `GitHub` can have on the process of development and bug-fixing. For example, the most up-to-date version of the `mice` package in `R` can be directly installed from the `mice` repository with the following code:
 
@@ -125,23 +121,27 @@ You can see that this process requires package `devtools` that expands the `R` f
 
 #### Installing on Mac
 
-I suggest you install `Git` by downloading and installing [`GitHub Desktop`](https://desktop.github.com). `GitHub`'s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on `GitHub`.
+I suggest you go full-nerd and use `Git` entirely from the terminal. All you need to do is to install [`git`](https://git-scm.com/downloads/mac). After that, you can work from the terminal using [git commands](https://git-scm.com/docs).
 
-When installed, you can go to `GitHub Desktop > Install Command Line Tool`
-
-After a reboot, all should be set.
+If you're not quite ready for that, I suggest you install `Git` by downloading and installing [`GitHub Desktop`](https://desktop.github.com). `GitHub`'s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on `GitHub`. When installed, you can go to `GitHub Desktop > Install Command Line Tool`. After a reboot, all should be set.
 
 #### Installing on Windows
 
-Download and install [`Git for Windows`](https://gitforwindows.org), Then download and install [`GitHub Desktop`](https://desktop.github.com). `GitHub`'s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on `GitHub`.
-
+Download and install [`Git for Windows`](https://gitforwindows.org). Then, download and install [`GitHub Desktop`](https://desktop.github.com). `GitHub`'s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on `GitHub`.
 After a reboot, all should be set.
+
+#### Installing on Linux
+
+If you're reading this, first of all, congratulations. You have my respect. I don't know any GUI-based tools for `Git`, so let's stick to the classics.
+Install [`Git`](https://git-scm.com/downloads/linux).
+After that, you can work from the terminal using [git commands](https://git-scm.com/docs).
 
 ------------------------------------------------------------------------
 
 ### Command line interface vs. GUI
 
-Ultimately, you'll want to learn how to use `Git` through the command line interface (CLI). It offers better and more comprehensive functionality. Again, [take this 15-minute course](https://learngitbranching.js.org) to get a gentle introduction. But do not be afraid that you miss out on the CLI if you don't study this link: In week 4 we'll explore in detail how to handle `Git` when things go haywire. You'll be a CLI-wizard by then.
+Ultimately, you'll want to learn how to use `Git` through the command line interface (CLI). It offers better and more comprehensive functionality. Again, [take this 15-minute course](https://learngitbranching.js.org) to get a gentle introduction. 
+Later we'll explore in detail how to handle `Git` when things go wrong. You'll be a CLI-wizard by then.
 
 ------------------------------------------------------------------------
 
@@ -153,15 +153,16 @@ GitHub sees every file in your repository as one of the following three
 -   **untracked files** that have not been staged or committed
 -   **ignored files** that have been explicitly ignored
 
-It may be wise to instruct `Git` to ignore changes in some files. For example, compiled files (think about `.com`, `.exe`, `.o`, `.so`, etc), archives (e.g. `.zip`, `.tar`, `.rar`), logs (`.log`) and files generated in runtime (`.temp`) do not have to be tracked by `Git`. The same holds for hidden system files (e.g. `.DS_Store` or `Thumbs.db`). Adding such filetypes to a file named `.gitignore` and placing that file in the root of your repository will take care of focusing `Git`'s energy on useful files only. For common `.gitignore` examples, see [this repository](https://github.com/github/gitignore). There are many examples inside, such as [this `.gitignore` example for `R`](https://github.com/github/gitignore/blob/master/R.gitignore)
+It may be wise to instruct `Git` to ignore changes in some files. For example, compiled files (think about `.com`, `.exe`, `.o`, `.so`, etc), archives (e.g. `.zip`, `.tar`, `.rar`), logs (`.log`) and files generated in runtime (`.temp`) do not have to be tracked by `Git`. The same holds for hidden system files (e.g. `.DS_Store` or `Thumbs.db`). Adding such filetypes to a file named `.gitignore` and placing that file in the root of your repository will take care of focusing `Git`'s energy on useful files only. For common `.gitignore` examples, see [this repository](https://github.com/github/gitignore). There are many examples inside, such as [this `.gitignore` example for `R`](https://github.com/github/gitignore/blob/master/R.gitignore).
+When you create a new repository on GitHub, you have the option of creating a default .gitignore file for your language of choice.
 
 ------------------------------------------------------------------------
 
 ### Linking `GitHub` and `RStudio`
 
-Securely linking your local machine to the remote repository is vital when collaborating with other people. In short; you would not want a potential hacker to have contributor access to any of your projects. I have prepared [this walkthrough video](https://www.gerkovink.com/oldmarkup/Wk1/Link%20Git%20and%20RStudio.mp4) that details the process of linking `GitHub` to your machine and `RStudio`. Below I explain the rationale of using both an SSH key and a personal access token.
+**Securely** linking your local machine to the remote repository is vital when collaborating with other people. You would not want a potential hacker to have contributor access to any of your projects. [This walkthrough video](https://www.gerkovink.com/oldmarkup/Wk1/Link%20Git%20and%20RStudio.mp4) details the process of linking `GitHub` to your machine and `RStudio`. Below we explain the rationale of using both an SSH key and a personal access token.
 
-If you still experience problems after following my walkthrough, check [this chapter](https://happygitwithr.com/troubleshooting.html)
+If you still experience problems after following the aforementioned walkthrough, check [this chapter](https://happygitwithr.com/troubleshooting.html)
 
 To learn more about maintaining a package as `GitHub` repository within `RStudio`, have a look at [this guide](http://r-pkgs.had.co.nz/git.html) by [Hadley Wickham](http://hadley.nz).
 
@@ -169,13 +170,13 @@ To learn more about maintaining a package as `GitHub` repository within `RStudio
 
 ### SSH keys
 
-With an SSH key you can identify yourself to an online server (in this case the `GitHub` server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes hash code is communicated every time. You can use an SSH key to link `RStudio` to your `GitHub` repository, but it is better to use a personal access token for this. See below.
+With an SSH key you can identify yourself to an online server (in this case the `GitHub` server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes *hash code* is communicated every time. You can use an SSH key to link `RStudio` to your `GitHub` repository, but it is better to use a personal access token for this. See below.
 
 ------------------------------------------------------------------------
 
 ### Personal access tokens
 
-If you use `GitHub`'s 2FA functionality - **you should!** - your username and password are not sufficient to `push` `commits` to `GitHub` through `RStudio`. To solve this follow these steps on [github.com](https://github.com) like I detail in [this walkthrough video](https://www.gerkovink.com/oldmarkup/Wk1/Link%20Git%20and%20RStudio.mp4):
+Because `GitHub` requires Two-Factor Authentication (2FA), your username and password are not sufficient to `push` `commits` to `GitHub` through `RStudio`. To solve this follow these steps on [github.com](https://github.com) as detailed in [this walkthrough video](https://www.gerkovink.com/oldmarkup/Wk1/Link%20Git%20and%20RStudio.mp4):
 
 1.  Log in to your account
 2.  Click on your profile photo (upper right corner) and select `Settings`
@@ -183,10 +184,10 @@ If you use `GitHub`'s 2FA functionality - **you should!** - your username and pa
 4.  Select `Personal access tokens` in the left sidebar. The classic token as it is now called is sufficient
 5.  Click `Generate new token`
 6.  Give the token a name
-7.  Select at least the `repo` scope; you'll need these permissions to access repositories. Also choose a relevant expiration: the longer the better, the shorter the safer. Remember that you can always generate a new token if you need to.
+7.  Select at least the `repo` scope; you'll need these permissions to access repositories. Also choose a relevant expiration: the longer the more convenient, the shorter the safer. You can always generate a new token if you need to.
 8.  Click Generate token
 
-Copy the token. The token will not be displayed again, so copy-paste it directly where it is needed. Remember that you can always generate a new token if you need to.
+Copy the token. The token **will not be displayed again**, so paste it directly where it is needed. Remember that you can always generate a new token if you need to.
 
 In `RStudio`, paste the generated token in the password field when `RStudio` asks for your credentials. The token will now serve as the unique authenticated link instead of your password.
 
@@ -199,59 +200,25 @@ In `RStudio`, paste the generated token in the password field when `RStudio` ask
 3.  Create a new branch called `wk3`
 4.  Update the file `story.qmd` by adding three words to the sentence and commit the changes. You can do this by clicking on the `Git` tab in `RStudio`, selecting the files you want to commit (only one in this case!), writing a commit message and clicking the `Commit` button.
 5.  Push to your `GitHub` fork. You can do this by clicking the green `Push` button in the `Git` tab in `RStudio` or by using 
-6.  Send a pull request (PR) to incorporate your changes into the `upstream/main` branch (i.e. `gerkovink/markup@main`). You can do this by going to your fork on `GitHub` and clicking the `Pull request` button. Make sure to select the correct branches.
+6.  Send a pull request (PR) to incorporate your changes into the `upstream/main` branch (i.e. `mlarpis/markup@main`). You can do this by going to your fork on `GitHub` and clicking the `Pull request` button. Make sure to select the correct branches.
 7. If you're fast enough, your commit will not result in a conflict. We will merge the PR's in the order they are presented in, as long as there are no conflicts. 
 8. If need be, update your PR by simply submitting another commit and pushing it to your fork. This will update the PR automatically.
 
 ------------------------------------------------------------------------
 
-::: callout-tip
-## Monte Carlo simulation exercise (no need to hand in)
-
-1.  Perform a small simulation that does the following:
-
-```{=html}
-<!-- -->
-```
-a.  Sample 100 samples from a standard normal distribution.
-b.  For each of these samples, calculate the following statistics for the mean:
-
--   absolute bias
--   standard error
--   lower bound of the 95% confidence interval
--   upper bound of the 95% confidence interval
-
-c.  Create a plot that demonstrates the following:
-
-***"A replication of the procedure that generates a 95% confidence interval that is centered around the sample mean would cover the population value at least 95 out of 100 times"*** [(Neyman, 1934)](https://www.google.nl/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjk4LaD6LrXAhUGC8AKHdATBhMQFggoMAA&url=http%3A%2F%2Fwww.stat.cmu.edu%2F~brian%2F905-2008%2Fpapers%2Fneyman-1934-jrss.pdf&usg=AOvVaw3KRw9DSklPihrYIM0_zRrC)
-
-d.  Present a table containing all simulated samples for which the resulting confidence interval does not contain the population value.
-:::
-
-::: {.callout-caution collapse="true"}
-### My solutions to the exercises
-
--   [My old solution to the MC exercise](https://www.gerkovink.com/oldmarkup/Wk1/Solution_to_Ex1.html)
--   [My solution to the MC exercise as I would do it now](https://www.gerkovink.com/oldmarkup/Wk1/Solution_to_Ex1_future.html)
-:::
-
-------------------------------------------------------------------------
-
 ## Exercise 2: `Git` it done
 
-This week we will also learn how to use $git$ properly when we mess up. But let's not learn that on this year's repo ;-). Fork [this older course repository](https://github.com/gerkovink/markup2020), deselect `Copy the master branch only` in order to copy all branches and checkout the `Exercise_wk4` branch.
-
-Let's continue this week with this second exercise.
+This week we will also learn how to use `git` properly when we mess up. But let's not learn that on this year's repo ;-). Fork [this older course repository](https://github.com/mlarpis/markup2020), deselect `Copy the master branch only` in order to copy all branches.
 
 ------------------------------------------------------------------------
 
 ### Disclaimer
 
-I'll take you by the hand through the exercise. So if you follow this manual step by step, you'll be done at the end and you will have a good notion of troubleshooting with `Git` \[or a reference thereof\].
+I'll take you by the hand through the exercise. So if you follow this manual step by step, you'll be done at the end and you will have a good notion of troubleshooting with `Git`.
 
 This exercise is a summary of important commands. A full and comprehensive overview can be found in [the `pro Git` book](https://git-scm.com/book/en/v2).
 
-O, and we forgot to tell you: you'll need the terminal for this exercise. You may use the one in `RStudio`, or the dedicated terminal on UNIX systems or the command prompt or [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) on Windows.
+Oh, and we forgot to tell you: you'll need the terminal for this exercise. You may use the one in `RStudio`, or the dedicated terminal on UNIX/Linux/Mac or the command prompt or [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) on Windows.
 
 ------------------------------------------------------------------------
 
@@ -259,7 +226,7 @@ O, and we forgot to tell you: you'll need the terminal for this exercise. You ma
 
 Before we continue it is good to all start from the point of departure.
 
-1.  Use the terminal to navigate to the `Git` repository (the location of the git repo on your HDD)
+1.  Use the terminal to navigate to the `Git` repository (the location of the git repo on your computer)
 2.  Type `git pull` to make sure that you obtain the latest state from the remote on `GitHub`
 
 ```{markdown} 
@@ -277,13 +244,14 @@ Switched to branch 'Exercise_wk4'
 Your branch is up to date with 'origin/Exercise_wk4'.
 ```
 
-I've now been switched to the `Exercise_wk4` branch. It is up to date with `origin/Exercise_wk4`, meaning that GitHub and my local copy are in sync. `origin` is a shorthand name for the remote repository that a project was originally cloned from. It is useful that `origin` is referenced instead of the original repo's URL --\> This makes referencing much more convenient.
+My local `Exercise_wk4` is up to date with `origin/Exercise_wk4`, meaning that GitHub and my local copy are in sync. `origin` is a shorthand name for the remote repository that a project was originally cloned from. It is useful that `origin` is referenced instead of the original repo's URL --\> This makes referencing much more convenient.
+Note that this *does not mean* that they will remain in sync automatically from now on. Only that there is a reference between the two. But you still need to `push` and `pull` to keep them in sync in the future.
 
 ------------------------------------------------------------------------
 
 ### Inspect the current state
 
-Make sure you are in the `Exercise_wk4` branch. Then Use `git log --graph` to inspect the current Git branch and its commits.
+Make sure you are in the `Exercise_wk4` branch. Then use `git log --graph` to inspect the current Git branch and its commits.
 
 ```{markdown}
 % git log --graph          
@@ -396,7 +364,7 @@ fdd923ad2b522d6e4357229ea801d23ec5b16717 update readme
 
 Please note that we only reference the short hash. There is no need to reference the longer hash as long as the sequence of the shorter reference is unique.
 
-From this `--pretty=oneline` view it is now easy to spot the origin of our course repository - the initial commit that initiated the `Git` goodness. You can also see that I updated the `.gitignore`, a hidden file that specifies which files and directories to be ignored by `Git`. And I did some cosmetic changes and file deletions. This is very insightfull because of the detailed, but consice commit messages.
+From this `--pretty=oneline` view it is now easy to spot the origin of our course repository - the initial commit that initiated the `Git` goodness. You can also see that Gerko updated the `.gitignore`, a hidden file that specifies which files and directories to be ignored by `Git`. And he did some cosmetic changes and file deletions. This is very insightful because of the detailed, but concise commit messages.
 
 ------------------------------------------------------------------------
 
@@ -432,7 +400,7 @@ We are now at the old state. So we went back in time. The current state where we
 
 There are a couple of terms that are *new*:
 
--   HEAD: *The HEAD in `Git` is the pointer to the current branch reference. It is the last commit you have made or checked out \[in our case\].* **REMEMBER that the head will always serve as the parent to the next commit**
+-   HEAD: *The HEAD in `Git` is the pointer to the current branch reference. It is the last commit you have made or \[in our case\] checked out.* **REMEMBER that the head will always serve as the parent to the next commit**
 -   detached HEAD: *The same as the head, but now the pointer references a specific commit and not a branch.*
 
 ------------------------------------------------------------------------
@@ -469,7 +437,7 @@ Let's take that old state and make it into a proper point of departure for new t
 Switched to a new branch 'Wk4_markup'
 ```
 
-We now have checked out an old state and made it into a new branch. The cool thing is that we can now commit all we want and everything will be properly logged. Just remember that if you'd like to go back in time and play around with an old state of your project --\> **Merge the old state into a new branch** like I demonstrated above.
+We now have checked out an old state and made it into a new branch. The cool thing is that we can now commit all we want and everything will be properly logged. Just remember that if you'd like to go back in time and play around with an old state of your project --\> **Merge the old state into a new branch** as demonstrated above.
 
 ------------------------------------------------------------------------
 
@@ -595,7 +563,7 @@ fdd923ad2b522d6e4357229ea801d23ec5b16717 update readme
 
 ### Undo a commit
 
-When shit hits the fan, we can always undo a commit. For example, the following command reverts all changes to the inital commit
+We can always undo a commit. For example, the following command reverts all changes to the initial commit
 
 ```{markdown}
 % git reset --hard 493609e  
@@ -655,7 +623,7 @@ HEAD is now at 9e6c38c add two text files
 
 Using `reflog` and HEAD is in this case more flexible than using `log` and the SHA-1 hash. `reflog` yields the log of all changes in the pointer HEAD, while `log` only gives you the history of the logged commits. Once a commit is undone, it is gone from the `log`. Moreover, using `reflog` and HEAD allows you to go back into the future, like in the above example.
 
-**NOTE: Do not wait too long to undo your resets. After a few days/weeks garbage collection may kick in and `Git` will eventually see old commit as unreferenced. This makes them irretrievable**
+**NOTE: Do not wait too long to undo your resets. After a few days/weeks garbage collection may kick in and `Git` will eventually see old commits as unreferenced. This makes them irretrievable**
 
 ------------------------------------------------------------------------
 
@@ -714,7 +682,7 @@ Auto-merging README.Rmd
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-We've now effectively created a conflict. A conflict must be resolved before a merge is possible. If you switch to GiHub desktop, you'll see this pop-up
+We've now effectively created a conflict. A conflict must be resolved before a merge is possible. If you switch to GitHub desktop, you'll see this pop-up
 
 ![](images/wk3/conflict.png){width=50%}
 
@@ -762,28 +730,31 @@ You should now have all the skills to fill your template with the course deliver
 
 ### Solution
 
+::: {.callout-caution collapse="true"}
 ```{markdown}
-% git branch Wk4_gerkovink 
-% git checkout Wk4_gerkovink
-Switched to branch 'Wk4_gerkovink'
-% mv add_text_file.txt gerkovink.txt
-% git add -A
-% git commit -m 'gerko`s commit'    
-[Wk4_gerkovink fb26e75] gerko`s commit
+% git checkout -b Wk3_pablo
+Switched to a new branch 'Wk3_pablo'
+% git mv add_text_file.txt pablo.txt
+% git commit -m 'pablo`s commit'
+[Wk3_pablo 0211826] pablo`s commit
  1 file changed, 0 insertions(+), 0 deletions(-)
- rename add_text_file.txt => gerkovink.txt (100%)
-% git push origin Wk4_gerkovink
-Enumerating objects: 15, done.
-Counting objects: 100% (15/15), done.
+ rename add_text_file.txt => pablo.txt (100%)
+% git push --set-upstream origin Wk3_pablo
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
 Delta compression using up to 8 threads
-Compressing objects: 100% (10/10), done.
-Writing objects: 100% (10/10), 1002 bytes | 1002.00 KiB/s, done.
-Total 10 (delta 7), reused 0 (delta 0)
-remote: Resolving deltas: 100% (7/7), completed with 3 local objects.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 876 bytes | 876.00 KiB/s, done.
+Total 9 (delta 5), reused 2 (delta 1), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
 remote: 
-remote: Create a pull request for 'Wk4_gerkovink' on GitHub by visiting:
-remote:      https://github.com/gerkovink/markup2020/pull/new/Wk4_gerkovink
+remote: Create a pull request for 'Wk3_pablo' on GitHub by visiting:
+remote:      https://github.com/PabloMosUU/markup2020/pull/new/Wk3_pablo
 remote: 
-To https://github.com/gerkovink/markup2020.git
- * [new branch]      Wk4_gerkovink -> Wk4_gerkovink
+To github.com:PabloMosUU/markup2020.git
+ * [new branch]      Wk3_pablo -> Wk3_pablo
+branch 'Wk3_pablo' set up to track 'origin/Wk3_pablo'.
 ```
+
+Note that `git mv` both renames the file and stages the changes.
+:::
