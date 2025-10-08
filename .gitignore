@@ -40,3 +40,8 @@ rsconnect/
 /.quarto/
 /_site/
 git.txt
+
+# files rendered by GitHub Actions
+docs/
+slides/**/*.html
+slides/**/libs/
