@@ -16,7 +16,6 @@ format:
     embed-resources: true
     theme: [solarized, gerko.scss]
     progress: true
-    multiplex: true
     transition: fade
     slide-number: true
     margin: 0.075

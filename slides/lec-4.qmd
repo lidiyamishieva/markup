@@ -22,7 +22,6 @@ format:
     theme: [solarized, gerko.scss]
     incremental: true  
     progress: true
-    multiplex: true
     transition: fade
     slide-number: true
     margin: 0.075
