@@ -15,6 +15,7 @@
 - add slides to wk 4 about: writing functions, vectorization (purrr), targets package
 - add how to cite R packages
 - add example Make file?
+- maybe add resources https://github.com/ianhussey/simulation-workshop, https://github.com/ianhussey/simulation-course
 
 ### wk 5
 - check if exercise includes instruction to launch username.github.io page
