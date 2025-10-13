@@ -2,7 +2,7 @@
 
 ::: callout-tip
 ## Lecture Week 2
-Now that we have learned $\LaTeX$ we'll consider Quarto. The slides for this week can be found [here](slides/lec-2.html)
+Now that we have learned LaTeX we'll consider Quarto. The slides for this week can be found [here](slides/lec-2.html)
 :::
 
 ---

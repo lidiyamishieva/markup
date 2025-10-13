@@ -45,3 +45,9 @@ git.txt
 docs/
 slides/**/*.html
 slides/**/libs/
+
+# files created when rendering to PDF
+index.aux
+index.log
+index.tex
+index.toc

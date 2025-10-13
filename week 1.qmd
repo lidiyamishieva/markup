@@ -2,7 +2,7 @@
 
 ::: callout-tip
 ## Lecture Week 1
-We start this course about markup languages with a deep dive into $\LaTeX$ - the master of all publication platforms. The first week's slides can be found [here](slides/lec-1.html)
+We start this course about markup languages with a deep dive into LaTeX - the master of all publication platforms. The first week's slides can be found [here](slides/lec-1.html)
 :::
 
 ---
@@ -12,7 +12,7 @@ We start this course about markup languages with a deep dive into $\LaTeX$ - the
 Dear all, 
 
 Welcome to `MLaRPiS`. In this course you will learn a great deal about presenting and 
-structuring your research. We start doing so with $\LaTeX$, an environment for typesetting
+structuring your research. We start doing so with LaTeX, an environment for typesetting
 documents that is particularly useful for complex content, such as graphics, tables 
 and equations. The result of a `LaTeX` document is a perfectly typeset `pdf` that adheres to a set of predefined rules. Many journals and preprint services in our field require `LaTeX` documents. This is why you have to learn it. The resulting flexibility and customizability when using `LaTeX` is why you should learn it. 
 
@@ -224,4 +224,4 @@ data.all <- cbind(data = data,
 
 If you know how to use `git`, go ahead. If you don't, no panic. We'll cover that in week 3. In the meantime you can use the `> add file` functionality on GitHub as illustrated below. 
 
-![](images/deliv_wk1.gif) 
+![](images/deliv_wk1.png) 

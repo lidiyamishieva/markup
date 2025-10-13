@@ -91,11 +91,21 @@ library(testthat) # unit testing
 ```
 
 #### Preparing the package structure
-We need a location for our `R`-package. The simplest approach to creating the skeleton for an `R`-package is to use `RStudio`. The following gif outlines this procedure:
+We need a location for our `R`-package. The simplest approach to creating the skeleton for an `R`-package is to use `RStudio`. 
 
-<center>
-![](images/wk6/packagefolder.gif){width=90%}
-</center>
+::: {.content-visible when-format="html"}
+
+::: {#fig-packagefolder}
+
+The following gif outlines this procedure:
+
+-<center>
+-![](images/wk6/packagefolder.gif){width=90%}
+-</center>
+
+:::
+
+:::
 
 We have now created the necessary structure for an `R`-package. We can see this structure and the generated package files in the `File Pane` in `RStudio`.
 
@@ -111,9 +121,17 @@ The `R` subfolder contains all the `R`-code for your package and the `man` folde
 
 As a matter of fact, the skeleton `R`-package is already a fully functional `R`-package. Try installing the package in the `build` pane. 
 
+::: {.content-visible when-format="html"}
+
+::: {#fig-build}
+
 <center>
 ![](images/wk6/build.gif){width=90%}
 </center>
+
+:::
+
+:::
 
 #### Add the description
 Open the file `DESCRIPTION` from the file pane. The following window opens:
@@ -156,9 +174,17 @@ usethis::use_r("rounder")
 
 The `use_r()` function from the `usethis` package is very convenient, because it creates the necessary file in the correct location and opens the file in the editor pane. 
 
+::: {.content-visible when-format="html"}
+
+::: {#fig-user}
+
 <center>
 ![](images/wk6/use_r.gif){width=90%}
 </center><br>
+
+:::
+
+:::
 
 Now that we have created the file for our functional code, we can start building the code file. The most flexible approach to creating and maintaining a package is to use `roxygen2`. The `roxygen2` package is a convenient in-line documentation convention that generates your `Rd` documentation, `NAMESPACE` file, and much more for you. Remember that `man` folder in our package root? That contains all documentation files. However, you can imagine if we have two seperate locations for our `R`-code and our `Rd` help files, that at some point the code and documentation might get out of sync. For example, if we update the code, but forget to reflect changes in our manual, the usability of our package may be at stake and documentation to end-users might get confusing. Most of all, it would be a lot of work for us to maintain multiple linked files in multiple locations. `roxygen2` solves this for us by extracting the documentation from our `R`-code file. The only thing we need to do is maintain a single file. 
 
@@ -221,9 +247,17 @@ Now that we have a working `rounder.R` file with documentation included, we can 
 devtools::document()
 ```
 
+::: {.content-visible when-format="html"}
+
+::: {#fig-devtools}
+
 <center>
 ![](images/wk6/devtools.gif){width=90%}
 </center><br>
+
+:::
+
+:::
 
 The `document()` function from the `devtools` package will build all documentation for all files that use `roxygen2` and it will build the `NAMESPACE` of your package accordingly. If you encounter the following message:
 
@@ -239,9 +273,17 @@ We can now remove the `R/hello.R` and `man/hello.Rd` files as they are not suppo
 #### Building and checking
 Let's check the functionality of our package. 
 
+::: {.content-visible when-format="html"}
+
+::: {#fig-check}
+
 <center>
 ![](images/wk6/check.gif){width=90%}
 </center><br>
+
+:::
+
+:::
 
 We can see under `build > check` that our current package yields 1 error, 1 warning and 1 note. 
 
@@ -426,11 +468,20 @@ test_that("rounder yields different results than round", {
 })
 ```
 
-Click the `Test` button in the `build` pane:
+Click the `Test` button in the `build` pane.
+
+::: {.content-visible when-format="html"}
+
+::: {#fig-test}
 
 <center>
 ![](images/wk6/test.gif){width=90%}
 </center>
+
+:::
+
+:::
+
 All test should pass, meaning that your `rounder()` function yields correct results (test 1) that differ fundamentally from the results obtained with `round()` (test 2). 
 
 If test would fail, you'd be notified. For example
@@ -451,37 +502,91 @@ Fortunately, our test all passed. Now rerun the `R CMD check`. If all is well yo
 Let's publish our `R`-package to `GitHub`. To do so, we need to perform two steps. First, we must log (commit) our changes to the `Git` distributed version control system. This stores the file changes to our own machine. Next we must link our local `Git` to a remote online repository on `GitHub`. Luckily, with `GitHub Desktop`, we can perform all these steps in a single window interface. 
 
 Let's start by adding our `R`-package to `GitHub desktop`. Remember that we already started the package in `RStudio` as a `Git` repository, so we only have to point `GitHub desktop` to the correct directory.
+
+::: {.content-visible when-format="html"}
+
+::: {#fig-addgitrepo}
+
 <center>
 ![](images/wk6/addgitrepo.gif){width=90%}
 </center>
 
+:::
+
+:::
+
 Next, we commit the changes. This means that we save the state of files for a moment in time, so that we can always revert to that state and see how the files changed with respect to the previous state. 
+
+::: {.content-visible when-format="html"}
+
+::: {#fig-commit}
+
 <center>
 ![](images/wk6/commit.gif){width=90%}
 </center>
+
+:::
+
+:::
+
 Naturally, you would not only do this at the start (when `RStudio` created the `Git` repository) and end (when we have a working package), but at regular and informative intervals. For example, when you add a function, a test, a help file, a license, etcetera. 
 
 Now that we have commited our package, we can publish it on `GitHub`.
+
+::: {.content-visible when-format="html"}
+
+::: {#fig-publish}
+
 <center>
 ![](images/wk6/publish_gh.gif){width=90%}
 </center>
 
+:::
+
+:::
+
 Try your online `GitHub` repositories at [https://github.com](https://github.com). You will see your package there and that the license is automatically recognized. You will also see that you are in the `main` branch. By default, that will be the live version of your package. Now that your package is live, it would be nice to add a `Readme` file that informs visitors to your repository. But we will extend our workflow with a good behaviour: not working in the `main` branch. We would not want to accidentally overwrite or break the functionality of our package, just because we were working in the same branch. So let's add a `Readme` to a new `development` branch.
+
+::: {.content-visible when-format="html"}
+
+::: {#fig-addreadme}
+
 <center>
 ![](images/wk6/addreadme.gif){width=90%}
 </center>
 
+:::
+
+:::
+
 When we commit the new `Readme` file to the `development` branch, a new window opens to propose the `pull request` (PR). The PR is nothing more than a request to the package developers to pull your proposed changes into (usually) the `main` branch of the software. 
 Since we are the developers, we have to both create and accept the PR. 
+
+::: {.content-visible when-format="html"}
+
+::: {#fig-openpr}
+
 <center>
 ![](images/wk6/openpr.gif){width=90%}
 </center>
 
+:::
+
+:::
+
 It is good procedure to write an informative PR message, usually outlining the nature and rationale of the changes. I also demonstrate how to accept a PR, thereby approving the changes per file (only one now) and signing it with my initials. I cannot formally *approve* my own PR, since that would leave great opportunity for subjectivity or error. Proper procedure would be to have someone else check and approve your changes. 
+
+::: {.content-visible when-format="html"}
+
+::: {#fig-pullrequest}
 
 <center>
 ![](images/wk6/pullrequest.gif){width=90%}
 </center>
+
+:::
+
+:::
 
 When you go back to `GitHub desktop` and `fetch` the changes on teh remote (that would be GitHub online), you will see that you have now access to the `readme` file and the `development` branch. 
 
@@ -490,18 +595,33 @@ Now that we have a proper and open source package online and the world as our us
 
 `GitHub` and `Zenodo` have paired to facilitate this procedure. If you link your `Zenodo` account to `GitHub`, [as outlined here](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content), you only have to click, copy and paste to fully make your `GitHub` repo citeable. 
 
+::: {.content-visible when-format="html"}
+
+::: {#fig-doi}
+
 <center>
 ![](images/wk6/doi.gif){width=90%}
 </center>
 
+:::
+
+:::
 
 
 #### Add citation
 `Zenodo` prepares the repository citation for us. We can simply grab the info, change our personal information and submit it to `GitHub`. 
 
+::: {.content-visible when-format="html"}
+
+::: {#fig-citation}
+
 <center>
 ![](images/wk6/citation.gif){width=90%}
 </center>
+
+:::
+
+:::
 
 The final step before we would put our package *out there* is to notify how users can refer to our package. Run the following code:
 ```{r eval = FALSE}
@@ -533,9 +653,17 @@ citEntry(
 
 Modify this to your name, DOI and repository url and paste it into the `CITATION` file.
 
+::: {.content-visible when-format="html"}
+
+::: {#fig-usecitation}
+
 <center>
 ![](images/wk6/use_citation.gif){width=90%}
 </center>
+
+:::
+
+:::
 
 ## Installing your own package from GitHub
 Go to `GitHub desktop`, and commit and push the changes to `GitHub`. Then run the following code block:
@@ -546,9 +674,17 @@ devtools::install_github("gerkovink/roundR")
 ```
 where you replace `"gerkovink/roundR"` with your `GitHub` handle and repository name. 
 
+::: {.content-visible when-format="html"}
+
+::: {#fig-installgithub}
+
 <center>
 ![](images/wk6/install_github.gif){width=90%}
 </center>
+
+:::
+
+:::
 
 ## Advanced topics
 
@@ -570,4 +706,5 @@ Potential next steps include:
 - Maintaining contributions (e.g. with [a code of conduct](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project))
 
 :::
+
 :::
