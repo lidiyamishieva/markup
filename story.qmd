@@ -4,7 +4,7 @@ The following story is written together with students from the course. The story
 
 ---
 
-I opened the door to the beautiful pink Lamborghini that my son stole from Adele
+I opened the door to the beautiful pink Lamborghini that my son paid for entirely yet stole from Adele
 
 
 ---
@@ -15,3 +15,4 @@ Here is a list of contributors that helped to make this story possible.
 - [Quinty Boer](https://github.com/quintyboer)
 - [Pablo Mosteiro](https://www.uu.nl/staff/PJMosteiroRomero)
 - [Anna Vijlbrief](https://github.com/AJV304)
+- [Axel Zweistra](https://github.com/AxelZweistra)
